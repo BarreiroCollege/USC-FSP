@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#SBATCH -n __C__
+#SBATCH -c 8
+#SBATCH -t 00:00:10
+#SBATCH -p thinnodes
+#SBATCH -o ./out/slurm-%j.out
+
+srun __EJ__
